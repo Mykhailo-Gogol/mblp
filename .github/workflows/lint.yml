@@ -1,4 +1,4 @@
-name: Lint
+name: Basic Workflow
 
 on:
   # Trigger the workflow on push or pull request,
@@ -33,3 +33,9 @@ jobs:
 
       - name: Run Prettier
         run: npx prettier . --check
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        run: npm run deploy
