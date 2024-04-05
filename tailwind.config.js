@@ -4,17 +4,17 @@ export default {
   theme: {
     extend: {
       animation: {
-        text: 'text 2s ease infinite',
+        heartbeat: 'heartbeat 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
-        text: {
+        heartbeat: {
           '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center',
+            transform: 'scale(1)',
+            opacity: '1',
           },
           '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center',
+            transform: 'scale(1.2)',
+            opacity: '0.9',
           },
         },
       },
