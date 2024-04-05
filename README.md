@@ -1,6 +1,6 @@
 ### Preview 🖥️
 
-[https://sghoneyicedtea.netlify.app//](https://sghoneyicedtea.netlify.app//)
+[https://sghoneyicedtea.netlify.app](https://sghoneyicedtea.netlify.app)
 
 ### main
 
