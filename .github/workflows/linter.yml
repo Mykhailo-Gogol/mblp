@@ -1,4 +1,4 @@
-name: Basic
+name: Linter
 
 on:
   # Trigger the workflow on push or pull request,
@@ -11,8 +11,8 @@ on:
       - main
 
 jobs:
-  run-workflow:
-    name: Basic Workflow
+  run-linter:
+    name: Basic Linter
     runs-on: ubuntu-latest
 
     steps:
@@ -33,6 +33,3 @@ jobs:
 
       - name: Run Prettier
         run: npx prettier . --check
-
-      - name: Build
-        run: npm run build
