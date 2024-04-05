@@ -1,4 +1,4 @@
-name: Basic Workflow
+name: Basic
 
 on:
   # Trigger the workflow on push or pull request,
@@ -11,8 +11,8 @@ on:
       - main
 
 jobs:
-  run-linters:
-    name: Run linters
+  run-workflow:
+    name: Basic Workflow
     runs-on: ubuntu-latest
 
     steps:
@@ -36,6 +36,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Deploy
-        run: npm run deploy
